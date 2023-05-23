@@ -686,10 +686,9 @@ __block__item {
 .video {
     margin-top: 148px;
     background: #143c3c;
-}
-.content-wrapper {
     padding: 116px 0 63px 0;
 }
+
 .video__block__top {
     display: flex;
     justify-content: space-between;

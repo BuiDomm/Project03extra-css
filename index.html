@@ -573,10 +573,11 @@
                         </section>
                         <section class="video__block__body">
                             <video id="video-play" controls="controls" src="./assets/img/Lần cuối - Ngọt (Remix đại bàng full).mp4" class="video__play"></video>
+                            <button class="video__play-btn" id="video-btn--click" fdprocessedid="ibv95" onclick=playVideo() >
+                                <img src="./assets/img/play-btn-video.svg" alt="" class="video__play-click">
+                            </button>
                         </section>
-                        <button class="video__play-btn" id="video-btn--click" fdprocessedid="ibv95" onclick=playVideo() >
-                            <img src="./assets/img/play-btn-video.svg" alt="" class="video__play-click">
-                        </button>
+                        
                       <script>
                         var video = document.getElementById("video-play");
                         var btn = document.getElementById("video-btn--click");
@@ -590,6 +591,10 @@
                                 );
                             } else {
                                 video.pause();
+                                btn.style.display="block";
+                                
+                                btn.setAttribute("style", "display: block")
+
                             }
                         }
                       </script>
