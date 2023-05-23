@@ -496,6 +496,107 @@
                     </div>
                 </div>
             </section>
+            <!-- Process -->
+            <section class="process ">
+                <div class="content-wrapper">
+                    <div class="process__block">
+                        <div class="services__top">
+                            <h3 class="service__top__title">OUR PROCESS</h3>
+                            <div class="service__top__row">
+                                <h2 class="service__top__heading">
+                                    A simple ,yet effective three step process
+                                </h2>
+                               
+                            </div>
+                        </div>
+                        <div class="process_bottom">
+                            <div class="process__list-item">
+                                    <div class="process__item ">
+                                           <div class="process__row">
+                                            <strong class="process__row__number">01.</strong>
+                                            <h3 class="process__row__title">Project idea</h3>
+                                           </div> 
+                                           <a href="#!" class="process__item__learnMore">Learn More</a>
+                                           <figure class="process__block-img">
+                                                <img src="./assets/img/process-img.png" alt="" class="process__img">
+                                           </figure>
+                                           <div class="process__hr"></div>
+                                    </div>
+                                    <div class="process__item">
+                                        <div class="process__row">
+                                         <strong class="process__row__number">02.</strong>
+                                         <h3 class="process__row__title">Brainstormaing</h3>
+                                         <p class="process__row__desc">We customse a ensure aligment and difine key mileones and defiverables experience tells us the best solutions are the ones  deated with clients.</p>
+                                        </div> 
+                                        <a href="#!" class="process__item__learnMore">Learn More</a>
+                                        <div class="process__hr"></div>
+                                 </div>
+                                 <div class="process__item">
+                                    <div class="process__row">
+                                     <strong class="process__row__number">03.</strong>
+                                     <h3 class="process__row__title">Execution</h3>
+                                     <p class="process__row__desc">We customse a ensure aligment and difine key mileones and defiverables experience tells us the best solutions are the ones  deated with clients.</p>
+                                     
+                                    </div> 
+                                    <a href="#!" class="process__item__learnMore">Learn More</a>
+                                    <div class="process__hr"></div>
+                             </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Video -->
+            <section class="video">
+                <div class="content-wrapper">
+                    <div class="video__block">
+                        <section class="video__block__top">
+                            <h2 class="video__top__title">A quick glance of our past projects</h2>
+                            <div class="video__top__moreInfo">
+                                <p class="video__moreInfo__desc">Are you strive for the fast project simplicity and clarity. Great 
+                                    design is born of those two things. 
+                                 </p>
+                                <a href="#!">
+                                     <div class="video__cta">
+                                        <h3 class="video__cta__browser">Browse all Projects</h3>
+                                        <figure class="video__cta__btn">
+                                            <svg class="video__cta__icon"
+                                             width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6.29415H21M21 6.29415L15.7059 1.00003M21 6.29415L15.7059 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                
+                                        </figure>
+                                     </div>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="video__block__body">
+                            <video id="video-play" controls="controls" src="./assets/img/Lần cuối - Ngọt (Remix đại bàng full).mp4" class="video__play"></video>
+                        </section>
+                        <button class="video__play-btn" id="video-btn--click" fdprocessedid="ibv95" onclick=playVideo() >
+                            <img src="./assets/img/play-btn-video.svg" alt="" class="video__play-click">
+                        </button>
+                      <script>
+                        var video = document.getElementById("video-play");
+                        var btn = document.getElementById("video-btn--click");
+                        video.removeAttribute("controls");
+                        function playVideo() {
+                            if (video.pause) {
+                                video.play(); 
+                                btn.style.display="none";
+                                video.setAttribute(
+                                    "controls","controls"
+                                );
+                            } else {
+                                video.pause();
+                            }
+                        }
+                      </script>
+
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
